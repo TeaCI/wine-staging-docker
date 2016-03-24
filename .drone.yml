@@ -1,0 +1,26 @@
+build:
+  image: drone/golang:1.5
+  commands:
+    - echo 'nothing to do'
+
+notify:
+  irc:
+    prefix: build
+    nick: msys32-docker
+    channel: msys2-ci
+    server:
+      host: irc.oftc.net
+      port: 6667
+
+publish:
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: teaci/wine-staging
+    tag:
+      - "latest"
+      - "w1.9.6"
+    when:
+      repo: teaci/wine-staging-docker
+      branch: master
