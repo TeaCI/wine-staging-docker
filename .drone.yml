@@ -6,8 +6,8 @@ build:
 notify:
   irc:
     prefix: build
-    nick: msys32-docker
-    channel: msys2-ci
+    nick: wine-staging-docker
+    channel: wine-zh
     server:
       host: irc.oftc.net
       port: 6667
@@ -22,5 +22,5 @@ publish:
       - "latest"
       - "w1.9.6"
     when:
-      repo: teaci/wine-staging-docker
+      repo: TeaCI/wine-staging-docker
       branch: master
