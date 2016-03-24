@@ -22,5 +22,5 @@ publish:
       - "latest"
       - "w1.9.6"
     when:
-      repo: TeaCI/wine-staging-docker
+      repo: teaci/wine-staging-docker
       branch: master
