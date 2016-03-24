@@ -22,5 +22,5 @@ publish:
       - "latest"
       - "w1.9.6"
     when:
-      repo: teaci/wine-staging-docker
+      repo: TeaCI/wine-staging-docker # case sensitive
       branch: master
