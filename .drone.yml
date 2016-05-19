@@ -20,7 +20,7 @@ publish:
     repo: teaci/wine-staging
     tag:
       - "latest"
-      - "w1.9.6"
+      - "w1.9.10"
     when:
       repo: TeaCI/wine-staging-docker # case sensitive
       branch: master
